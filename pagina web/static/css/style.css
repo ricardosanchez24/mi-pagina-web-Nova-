@@ -66,6 +66,7 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    align-items: center;
 }
 .enlaces{
     padding: 4rem;
