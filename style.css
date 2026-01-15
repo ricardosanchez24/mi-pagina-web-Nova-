@@ -82,7 +82,7 @@ a{
 }
 
 /* Sección héroe con imagen de fondo y tono negro (overlay) */
-.hero{
+.hero {
     position: relative;
     min-height: 70vh;
     display: flex;
@@ -90,7 +90,8 @@ a{
     justify-content: center;
     color: var(--color-blanco);
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(./img/Gemini_Generated_Image_45po7z45po7z45po.png);
+    /* CORRECCIÓN: Se agregó la coma y se actualizó el nombre a fondo.png */
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(./img/fondo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
