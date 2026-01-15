@@ -403,6 +403,28 @@ a{
 
 /* --- RESPONSIVE: SECCIÓN BIENVENIDA --- */
 @media (max-width: 768px) {
+    .div_header {
+        flex-direction: column; /* Pone uno debajo del otro */
+        gap: 1.5rem;            /* Espacio entre el logo y el botón */
+        padding-bottom: 2rem;   /* Un poco de aire abajo */
+    }
+
+    .logo {
+        padding: 1rem 0;        /* Quitamos el padding exagerado de los lados */
+        font-size: 3.5rem;      /* Ajustamos el tamaño del logo */
+    }
+
+    .header-cta {
+        width: 100%;            /* Que el contenedor del botón ocupe todo el ancho */
+        text-align: center;
+    }
+
+    .header-cta .btn-primary {
+        display: block;         /* Hace que el botón sea un bloque */
+        width: 100%;            /* Botón ancho completo para fácil clic */
+        max-width: 300px;       /* Pero que no sea gigante, tope de 300px */
+        margin: 0 auto;         /* Centrado */
+    }
     /* Reduce el tamaño del título solo en la sección hero */
     .hero h1 {
         font-size: 3.2rem; 
@@ -420,5 +442,42 @@ a{
     .hero {
         min-height: 60vh;
         padding: 4rem 1rem;
+    }
+}
+@media (max-width: 768px) {
+    /* --- ARREGLO HEADER (BOTÓN Y LOGO) --- */
+    .div_header {
+        flex-direction: column; /* Pone uno debajo del otro */
+        gap: 1.5rem;            /* Espacio entre el logo y el botón */
+        padding-bottom: 2rem;   /* Un poco de aire abajo */
+    }
+
+    .logo {
+        padding: 1rem 0;        /* Quitamos el padding exagerado de los lados */
+        font-size: 3.5rem;      /* Ajustamos el tamaño del logo */
+    }
+
+    .header-cta {
+        width: 100%;            /* Que el contenedor del botón ocupe todo el ancho */
+        text-align: center;
+    }
+
+    .header-cta .btn-primary {
+        display: block;         /* Hace que el botón sea un bloque */
+        width: 100%;            /* Botón ancho completo para fácil clic */
+        max-width: 300px;       /* Pero que no sea gigante, tope de 300px */
+        margin: 0 auto;         /* Centrado */
+    }
+
+    /* --- ARREGLO BIENVENIDA (Que ya tenías) --- */
+    .hero h1 {
+        font-size: 3.2rem;
+        line-height: 1.2;
+    }
+
+    .parrafo_inicio {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1.5rem;
     }
 }
