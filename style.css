@@ -400,3 +400,25 @@ a{
     .footer-grid{grid-template-columns: 1fr; text-align: center}
     .footer-links nav{display:inline-block}
 }
+
+/* --- RESPONSIVE: SECCIÓN BIENVENIDA --- */
+@media (max-width: 768px) {
+    /* Reduce el tamaño del título solo en la sección hero */
+    .hero h1 {
+        font-size: 3.2rem; 
+        line-height: 1.2;
+    }
+
+    /* Elimina los márgenes laterales grandes del párrafo */
+    .parrafo_inicio {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1rem; /* Un poco de relleno interno para que no pegue al borde */
+    }
+
+    /* Opcional: Ajusta la altura mínima para que no ocupe tanto en vertical si el texto es corto */
+    .hero {
+        min-height: 60vh;
+        padding: 4rem 1rem;
+    }
+}
